@@ -3,8 +3,6 @@ import streamlit as st
 st.set_page_config(page_title="Home",page_icon="🏠",layout="centered")
 
 
-st.write(st.__version__)
-
 st.write("# iLivery Growth Dashboard")
 st.write("###### Growth Dashboard created to track the metrics of the deliverers and restaurants in the marketplace")
 
