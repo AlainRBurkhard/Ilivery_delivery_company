@@ -10,7 +10,7 @@ from streamlit_folium import folium_static
 
 st.set_page_config( page_title= 'Strategy Panorama', page_icon = '📈', layout = 'wide')
                    
-daf=pd.read_csv('dataset/train.csv')
+daf=pd.read_csv('../dataset/train.csv')
 df = daf.copy()
 
 import sys
