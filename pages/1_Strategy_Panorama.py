@@ -2,7 +2,7 @@
 
 import pandas as pd
 import io
-pip install plotly
+!pip install plotly
 import plotly.express as px
 import folium
 import streamlit as st
