@@ -6,6 +6,10 @@ st.set_page_config(
     page_icon="🏠",
 )
 
+from functions import sidebar
+
+df = sidebar(df)
+
 st.write("# iLivery Growth Dashboard")
 st.write("###### Growth Dashboard created to track the metrics of the deliverers and restaurants in the marketplace")
 
