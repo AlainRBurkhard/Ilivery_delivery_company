@@ -2,7 +2,6 @@
 
 import pandas as pd
 import io
-pip install plotly
 import plotly as plot
 import plotly.express as px
 import folium
