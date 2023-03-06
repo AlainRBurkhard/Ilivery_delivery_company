@@ -1,5 +1,5 @@
 import streamlit as st
-
+pip install plotly_express==0.4.0
 
 st.set_page_config(page_title="Home",page_icon="🏠",layout="centered")
 
