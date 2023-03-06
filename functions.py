@@ -29,7 +29,7 @@ def clean_df(df):
     df['ID'] = df['ID'].apply(str.strip)
     df['Delivery_person_ID'] = df['Delivery_person_ID'].apply(str.strip)
     df['Road_traffic_density'] = df['Road_traffic_density'].apply(str.strip)
-    df['Weatherconditions'] = df['Weatherconditions'].apply(str.strip))
+    df['Weatherconditions'] = df['Weatherconditions'].apply(str.strip)
     
     mask = df['Weatherconditions'].str.contains('conditions')
     # use str.replace() to remove the string 'conditions' from the 'Description' column
