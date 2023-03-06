@@ -95,7 +95,7 @@ Pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1675487313961/work
 pkgutil_resolve_name @ file:///home/conda/feedstock_root/build_artifacts/pkgutil-resolve-name_1633981968097/work
 platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1675735718929/work
 plotly==5.13.0
-plotly-express==0.4.0
+plotly.express==0.4.0
 pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1667232663820/work
 pooch @ file:///home/conda/feedstock_root/build_artifacts/pooch_1643032624649/work
 prometheus-client @ file:///home/conda/feedstock_root/build_artifacts/prometheus_client_1674535637125/work
