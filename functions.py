@@ -26,11 +26,10 @@ def clean_df(df):
     df = df[~df.isin(['NaN ']).any(axis=1)].reset_index(drop=True)
 
     # deleting space#
-    for i in range( len( df ) ):
-        df.loc[i, 'ID'] = df.loc[i, 'ID'].strip()
-        df.loc[i, 'Delivery_person_ID'] = df.loc[i, 'Delivery_person_ID'].strip()
-        df.loc[i, 'Road_traffic_density'] = df.loc[i, 'Road_traffic_density'].strip()
-        df.loc[i, 'Weatherconditions'] = df.loc[i, 'Weatherconditions'].strip()
+    df['ID'] = df['ID'].apply(str.strip)
+    df['Delivery_person_ID'] = df['Delivery_person_ID'].apply(str.strip)
+    df['Road_traffic_density'] = df['Road_traffic_density'].apply(str.strip)
+    df['Weatherconditions'] = df['Weatherconditions'].apply(str.strip))
     
     mask = df['Weatherconditions'].str.contains('conditions')
     # use str.replace() to remove the string 'conditions' from the 'Description' column
