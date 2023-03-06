@@ -36,7 +36,7 @@ df = sidebar(df)
 
 with st.container():
     st.subheader("Deliver's Metric")
-    col1, col2, col3, col4= st.columns(4, gap="medium")
+    col1, col2, col3, col4= st.columns([1,1,1,2])
     with col1:
         delivery_unique = len(df.loc[:, 'Delivery_person_ID'].unique())
         col1.metric(label='Deliverers',value = delivery_unique, delta = None)
