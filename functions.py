@@ -58,13 +58,7 @@ def sidebar(df):
     st.sidebar.markdown('## Fast Home Food')
     st.sidebar.markdown("""---""")
 
-    ## ---- Date filter ----##
-    date_range = st.sidebar.slider(
-    'Date Range',
-    value=(pd.Timestamp(2022, 2, 11), pd.Timestamp(2022, 4, 13)),
-    min_value=pd.Timestamp(2022, 2, 11),
-    max_value=pd.Timestamp(2022, 4, 6),
-    format='DD-MM-YYYY')
+
 
     st.sidebar.markdown("""---""")
 
