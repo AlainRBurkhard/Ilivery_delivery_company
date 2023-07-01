@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 import numpy as np
 #====================== Functions ============================#
 
-def clean_df(df):
+def cl_df(df):
     """ 
     Function responsable for cleaning the dataframe
     1.delete empty cells on the dataframe 'NaN
