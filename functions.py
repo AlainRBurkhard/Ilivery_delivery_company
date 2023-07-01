@@ -59,12 +59,12 @@ def sidebar(df):
     st.sidebar.markdown("""---""")
 
     date_slider = st.sidebar.slider(
-    'Date',
-    min_value=pd.Timestamp('2022-02-11'),
-    max_value=pd.Timestamp('2022-04-06'),    
-    format='YYYY-MM-DD'
-    )
-
+        'Date',
+        value=str(pd.Timestamp('2022-04-13')),
+        min_value=str(pd.Timestamp('2022-02-11')),
+        max_value=str(pd.Timestamp('2022-04-06')),
+        format='YYYY-MM-DD'
+        )
     st.sidebar.markdown("""---""")
 
     ## ---- Traffic filter ----##
