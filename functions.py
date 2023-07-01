@@ -58,12 +58,11 @@ def sidebar(df):
     st.sidebar.markdown('## Fast Home Food')
     st.sidebar.markdown("""---""")
 
-    date_slider = st.sidebar.slider(
-    'Date',
-    value=pd.Timestamp(2022, 4, 13),  # Add a comma after the value assignment
-    min_value=pd.Timestamp(2022, 2, 11),
-    max_value=pd.Timestamp(2022, 4, 6),
-    format='DD-MM-YYYY')
+    date_slider = st.sidebar.slider('Date',
+                                    value=pd.Timestamp(2022, 4, 13),  # Add a comma after the value assignment
+                                    min_value=pd.Timestamp(2022, 2, 11),
+                                    max_value=pd.Timestamp(2022, 4, 6),
+                                    format='DD-MM-YYYY')
 
     st.sidebar.markdown("""---""")
 
