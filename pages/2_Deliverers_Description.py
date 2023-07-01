@@ -19,7 +19,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from functions import clean_df
 
-df = clean_df(df)
+df = cl_df(df)
 
 ## ------------------------------------------------##
 #                   STREAMLIT
