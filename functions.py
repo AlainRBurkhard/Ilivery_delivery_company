@@ -89,9 +89,7 @@ def sidebar(df):
 
     #---------setting the filters-------------#
 
-    #date filter
-    selected_lines = df['Order_Date'] < date_slider
-    df = df.loc[selected_lines,:]
+
 
     #traffic filter
     selected_lines = df['Road_traffic_density'].isin(traffic_conditions)
