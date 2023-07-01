@@ -59,10 +59,9 @@ def sidebar(df):
     st.sidebar.markdown("""---""")
 
     ## ---- Date filter ----##
-    st.sidebar.markdown('## Modify Data')
-    date_slider = st.sidebar.slider(
-    'Date',
-    value=pd.Timestamp(2022, 4, 13),
+    date_range = st.sidebar.slider(
+    'Date Range',
+    value=(pd.Timestamp(2022, 2, 11), pd.Timestamp(2022, 4, 13)),
     min_value=pd.Timestamp(2022, 2, 11),
     max_value=pd.Timestamp(2022, 4, 6),
     format='DD-MM-YYYY')
