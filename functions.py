@@ -58,11 +58,13 @@ def sidebar(df):
     st.sidebar.markdown('## Fast Home Food')
     st.sidebar.markdown("""---""")
 
-    date_slider = st.sidebar.slider('Date',
-                                    value=pd.Timestamp(2022, 4, 13),  # Add a comma after the value assignment
-                                    min_value=pd.Timestamp(2022, 2, 11),
-                                    max_value=pd.Timestamp(2022, 4, 6),
-                                    format='YYYY-MM-DD')
+    date_slider = st.sidebar.slider(
+        'Date',
+        value=pd.Timestamp('2022-04-13'),
+        min_value=pd.Timestamp('2022-02-11'),
+        max_value=pd.Timestamp('2022-04-06'),    
+        format='YYYY-MM-DD'
+    )
 
     st.sidebar.markdown("""---""")
 
@@ -86,8 +88,10 @@ def sidebar(df):
     st.sidebar.markdown('#### Powered by Ramon Burkhard')
 
     #---------setting the filters-------------#
-
-
+    
+    # Date filter
+    selected_lines = df['Order_Date'] < date_slider
+    df = df.loc[selected_lines, :]
 
     #traffic filter
     selected_lines = df['Road_traffic_density'].isin(traffic_conditions)
