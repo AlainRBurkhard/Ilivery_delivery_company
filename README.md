@@ -1,4 +1,4 @@
-#ACESS HERE < https://rburkhard-ilivery.streamlit.ap >
+#ACESS HERE < https://rburkhard-ilivery.streamlit.app/ >
 # Ilivery_delivery_company
 This repository contains files and script to build a delivery company strategy dashboard
 
