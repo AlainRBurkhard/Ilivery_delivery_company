@@ -60,9 +60,9 @@ def sidebar(df):
 
     date_slider = st.sidebar.slider(
         'Date',
-        value=str(pd.Timestamp('2022-04-13')),
-        min_value=str(pd.Timestamp('2022-02-11')),
-        max_value=str(pd.Timestamp('2022-04-06')),
+        value=pd.Timestamp('2022-04-13').to_pydatetime(),
+        min_value=pd.Timestamp('2022-02-11').to_pydatetime(),
+        max_value=pd.Timestamp('2022-04-06').to_pydatetime(),
         format='YYYY-MM-DD'
         )
     st.sidebar.markdown("""---""")
